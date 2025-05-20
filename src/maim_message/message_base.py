@@ -82,6 +82,7 @@ class UserInfo:
     user_id: Optional[str] = None
     user_nickname: Optional[str] = None  # 用户昵称
     user_cardname: Optional[str] = None  # 用户群昵称
+    user_titlename: Optional[str] = None  # 用户群头衔
 
     def to_dict(self) -> Dict:
         """转换为字典格式"""
@@ -102,6 +103,7 @@ class UserInfo:
             user_id=data.get("user_id"),
             user_nickname=data.get("user_nickname", None),
             user_cardname=data.get("user_cardname", None),
+            user_titlename=data.get("user_titlename", None),
         )
 
 
