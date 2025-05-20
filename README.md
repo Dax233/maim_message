@@ -1,3 +1,20 @@
+本版本经过修改，为 `UserInfo` 添加了 `user_titlename` 内容，目的是让枫能够更全面地“看到”群名片、群头衔和用户昵称（需要配合修改后的adapter和mmc）
+如之前下载过原版 `maim_message`，请先卸载原版本：
+
+```bash
+pip uninstall maim_message
+```
+
+然后进行手动安装：
+
+```bash
+git clone -b Feng https://github.com/Dax233/maim_message.git
+cd maim_message
+pip install -e .
+```
+
+以下为原 `readme.md` ：  
+
 # maim_message: MaimBot 通用消息接口库
 
 `maim_message` 是一个为 [MaimBot](https://github.com/MaiM-with-u/MaiBot) 生态系统设计的 Python 库，旨在提供一套标准化的消息格式定义和基于 WebSocket 的通信机制。它的核心目标是解耦 MaimBot 的各个组件（如核心服务 `maimcore`、平台适配器 `Adapter`、插件 `Plugin` 等），使得它们可以通过统一的接口进行交互，从而简化开发、增强可扩展性并支持多平台接入。
