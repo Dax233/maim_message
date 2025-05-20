@@ -1,4 +1,4 @@
-本版本经过修改，为 `UserInfo` 添加了 `user_titlename` 内容，目的是让枫能够更全面地“看到”群名片、群头衔和用户昵称（需要配合修改后的adapter和mmc）
+本版本经过修改，为 `UserInfo` 添加了 `user_titlename` 内容，目的是让枫能够更全面地“看到”群名片、群头衔和用户昵称（需要配合修改后的 adapter 和 mmc ）
 如之前下载过原版 `maim_message`，请先卸载原版本：
 
 ```bash
@@ -13,7 +13,7 @@ cd maim_message
 pip install -e .
 ```
 
-以下为原 `readme.md` ：  
+以下为原 readme.md ：
 
 # maim_message: MaimBot 通用消息接口库
 
